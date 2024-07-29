@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doublecmd>
+  <Tabs>
+    <OpenedTabs>
+      <Left>
+        <ActiveTab>0</ActiveTab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>12</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="mods">/home/kiwi/.local/share/atlauncher/instances/Minecraft121withFabric/</Path>
+                  <Path Filename="ViaFabricPlus-3.4.3.jar">/home/kiwi/.local/share/atlauncher/instances/Minecraft121withFabric/mods/</Path>
+                  <Path Filename=".discord-rpc">/home/kiwi/</Path>
+                  <Path Filename="..">/home/kiwi/.discord-rpc/</Path>
+                  <Path Filename="Downloads">/home/kiwi/</Path>
+                  <Path Filename="..">/home/kiwi/Downloads/</Path>
+                  <Path Filename="Documents">/home/kiwi/</Path>
+                  <Path Filename="ICON">/home/kiwi/Documents/</Path>
+                  <Path Filename="..">/home/kiwi/Documents/ICON/</Path>
+                  <Path Filename="ICON">/home/kiwi/Documents/</Path>
+                  <Path Filename="wallpapers">/home/kiwi/</Path>
+                  <Path Filename="0118.jpg">/home/kiwi/wallpapers/</Path>
+                  <Path Filename="Coding">/home/kiwi/</Path>
+                  <Path Filename="">/home/kiwi/Coding/</Path>
+                  <Path Filename="mods">/home/kiwi/.local/share/atlauncher/instances/Meteor/</Path>
+                  <Path Filename="">/home/kiwi/.local/share/atlauncher/instances/Meteor/mods/</Path>
+                  <Path Filename="logs">/home/kiwi/.local/share/atlauncher/instances/Meteor/</Path>
+                  <Path Filename="latest.log">/home/kiwi/.local/share/atlauncher/instances/Meteor/logs/</Path>
+                  <Path Filename="mods">/home/kiwi/.local/share/atlauncher/instances/Meteor/</Path>
+                  <Path Filename="">/home/kiwi/.local/share/atlauncher/instances/Meteor/mods/</Path>
+                  <Path Filename="chrome">/home/kiwi/.mozilla/firefox/kgl753cp.default-release/</Path>
+                  <Path Filename=".userContent.css.kate-swp">/home/kiwi/.mozilla/firefox/kgl753cp.default-release/chrome/</Path>
+                  <Path Filename="datareporting">/home/kiwi/.mozilla/firefox/kgl753cp.default-release/</Path>
+                  <Path Filename="kgl753cp.default-release">/home/kiwi/.mozilla/firefox/</Path>
+                  <Path Filename="extensions">/home/kiwi/.mozilla/firefox/kgl753cp.default-release/</Path>
+                  <Path Filename="addon@darkreader.org.xpi">/home/kiwi/.mozilla/firefox/kgl753cp.default-release/extensions/</Path>
+                  <Path Filename="extension-store">/home/kiwi/.mozilla/firefox/kgl753cp.default-release/</Path>
+                  <Path Filename="..">/home/kiwi/.mozilla/firefox/kgl753cp.default-release/extension-store/</Path>
+                  <Path Filename="extension-store-menus">/home/kiwi/.mozilla/firefox/kgl753cp.default-release/</Path>
+                  <Path Filename="..">/home/kiwi/.mozilla/firefox/kgl753cp.default-release/extension-store-menus/</Path>
+                  <Path Filename="content-prefs.sqlite">/home/kiwi/.mozilla/firefox/kgl753cp.default-release/</Path>
+                  <Path Filename="kgl753cp.default-release">/home/kiwi/.mozilla/firefox/</Path>
+                  <Path Filename="firefox">/home/kiwi/.mozilla/</Path>
+                  <Path Filename=".rigsofrods">/home/kiwi/</Path>
+                  <Path Filename="thumbnails">/home/kiwi/.rigsofrods/</Path>
+                  <Path Filename="Desktop">/home/kiwi/</Path>
+                  <Path Filename="kiwi">/home/</Path>
+                  <Path Filename=".cache">/home/kiwi/</Path>
+                  <Path Filename="accountwizard">/home/kiwi/.cache/</Path>
+                  <Path Filename=".cache">/home/kiwi/</Path>
+                  <Path Filename="accountwizard">/home/kiwi/.cache/</Path>
+                  <Path Filename="..">/home/kiwi/.cache/accountwizard/</Path>
+                  <Path Filename="drkonqi">/home/kiwi/.cache/</Path>
+                  <Path Filename=".config">/home/kiwi/</Path>
+                  <Path Filename="wofi">/home/kiwi/.config/</Path>
+                  <Path Filename="style.css">/home/kiwi/.config/wofi/</Path>
+                  <Path Filename="Downloads">/home/kiwi/</Path>
+                  <Path Filename="WhiteSur-Dark-solid">/home/kiwi/Downloads/</Path>
+                  <Path Filename="..">/home/kiwi/Downloads/WhiteSur-Dark-solid/</Path>
+                  <Path Filename="WhiteSur-Dark-solid">/home/kiwi/Downloads/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+      </Left>
+      <Right>
+        <ActiveTab>0</ActiveTab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>12</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="doublecmd">/usr/lib/doublecmd/</Path>
+                  <Path Filename="binfmt.d">/usr/lib/</Path>
+                  <Path Filename="include">/usr/</Path>
+                  <Path Filename="Coding">/home/kiwi/</Path>
+                  <Path Filename="FocusStack">/home/kiwi/Coding/</Path>
+                  <Path Filename="focusstack.sh">/home/kiwi/Coding/FocusStack/</Path>
+                  <Path Filename="EinheitenRechner">/home/kiwi/Coding/</Path>
+                  <Path Filename=".idea">/home/kiwi/Coding/EinheitenRechner/</Path>
+                  <Path Filename="EinheitenRechner">/home/kiwi/Coding/</Path>
+                  <Path Filename="Test">/home/kiwi/</Path>
+                  <Path Filename="..">/home/kiwi/Test/</Path>
+                  <Path Filename="Test">/home/kiwi/</Path>
+                  <Path Filename="..">/home/kiwi/Test/</Path>
+                  <Path Filename="Downloads">/home/kiwi/</Path>
+                  <Path Filename="..">/home/kiwi/Downloads/</Path>
+                  <Path Filename="Downloads">/home/kiwi/</Path>
+                  <Path Filename="kiwi">/home/</Path>
+                  <Path Filename="mnt">/</Path>
+                  <Path Filename="arch-everforest">/home/kiwi/</Path>
+                  <Path Filename="wofi">/home/kiwi/arch-everforest/</Path>
+                  <Path Filename="config">/home/kiwi/arch-everforest/wofi/</Path>
+                  <Path Filename="zsh">/home/kiwi/arch-everforest/</Path>
+                  <Path Filename=".zshrc">/home/kiwi/arch-everforest/zsh/</Path>
+                  <Path Filename="hypr">/home/kiwi/arch-everforest/</Path>
+                  <Path Filename="hyprland.conf">/home/kiwi/arch-everforest/hypr/</Path>
+                  <Path Filename="..">/home/kiwi/</Path>
+                  <Path Filename="kiwi">/home/</Path>
+                  <Path Filename="usr">/</Path>
+                  <Path Filename="share">/usr/</Path>
+                  <Path Filename="themes">/usr/share/</Path>
+                  <Path Filename="..">/usr/share/themes/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default (2024-07-23@09-00-14)</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+      </Right>
+    </OpenedTabs>
+  </Tabs>
+</doublecmd>

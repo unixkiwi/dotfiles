@@ -1,0 +1,44 @@
+2024-07-28 16:13:06.205 [info] Getting Manifest... claudius.classic-terminal
+2024-07-28 16:13:06.358 [info] Installing extension: claudius.classic-terminal {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/kiwi/.vscode-oss/extensions/extensions.json","path":"/home/kiwi/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.91.1","date":"2024-07-12T15:10:53.972Z"}}
+2024-07-28 16:13:07.087 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-amd.js
+- /usr/lib/code/out/bootstrap-fork.js
+2024-07-28 16:13:07.088 [info] Extension signature verification is not done: claudius.classic-terminal
+2024-07-28 16:13:07.136 [info] Extracted extension to file:///home/kiwi/.vscode-oss/extensions/claudius.classic-terminal-0.0.6-universal: claudius.classic-terminal
+2024-07-28 16:13:07.141 [info] Renamed to /home/kiwi/.vscode-oss/extensions/claudius.classic-terminal-0.0.6-universal
+2024-07-28 16:13:07.158 [info] Extension installed successfully: claudius.classic-terminal vscode-userdata:/home/kiwi/.vscode-oss/extensions/extensions.json
+2024-07-28 16:13:07.227 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/kiwi/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/kiwi/.vscode-oss/extensions/extensions.json.vsctmp'
+    at h.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19262)
+    at f (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19372)
+    at P.hb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:36571)
+    at P.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:28919)
+    at async s.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:14907)
+    at async V.vb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:105:119283)
+2024-07-28 16:13:16.191 [info] Uninstalling extension from the profile: claudius.classic-terminal@0.0.6 vscode-userdata:/home/kiwi/.vscode-oss/extensions/extensions.json
+2024-07-28 16:13:16.212 [info] Marked extension as uninstalled claudius.classic-terminal-0.0.6-universal
+2024-07-28 16:13:16.280 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/kiwi/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/kiwi/.vscode-oss/extensions/extensions.json.vsctmp'
+    at h.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19262)
+    at f (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19372)
+    at P.hb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:36571)
+    at P.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:28919)
+    at async s.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:14907)
+    at async V.vb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:105:119283)
+2024-07-28 16:13:16.425 [info] Successfully uninstalled extension from the profile claudius.classic-terminal@0.0.6 vscode-userdata:/home/kiwi/.vscode-oss/extensions/extensions.json
+2024-07-28 16:13:23.124 [info] Getting Manifest... noufalpp.flatland
+2024-07-28 16:13:23.289 [info] Installing extension: noufalpp.flatland {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/kiwi/.vscode-oss/extensions/extensions.json","path":"/home/kiwi/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.91.1","date":"2024-07-12T15:10:53.972Z"}}
+2024-07-28 16:13:23.807 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-amd.js
+- /usr/lib/code/out/bootstrap-fork.js
+2024-07-28 16:13:23.808 [info] Extension signature verification is not done: noufalpp.flatland
+2024-07-28 16:13:23.843 [info] Extracted extension to file:///home/kiwi/.vscode-oss/extensions/noufalpp.flatland-1.2.0-universal: noufalpp.flatland
+2024-07-28 16:13:23.848 [info] Renamed to /home/kiwi/.vscode-oss/extensions/noufalpp.flatland-1.2.0-universal
+2024-07-28 16:13:23.865 [info] Extension installed successfully: noufalpp.flatland vscode-userdata:/home/kiwi/.vscode-oss/extensions/extensions.json
+2024-07-28 16:13:23.934 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/kiwi/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/kiwi/.vscode-oss/extensions/extensions.json.vsctmp'
+    at h.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19262)
+    at f (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:19372)
+    at P.hb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:36571)
+    at P.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:28919)
+    at async s.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:14907)
+    at async V.vb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:105:119283)

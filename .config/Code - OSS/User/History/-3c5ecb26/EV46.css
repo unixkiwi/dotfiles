@@ -1,0 +1,46 @@
+/*
+    WOFI CONFIG
+    by Kiwi
+*/
+
+window {
+    padding: 50px;
+    background-color: rgba(35, 43, 47, 0.87);
+    font-family: 'JetBrains Mono Nerd Font', sans-serif;
+    font-size: 16px;
+    border: 2px #a4c078 solid;
+}
+
+#input {
+    margin: 17px 15px 20px 15px;
+    padding: 10px 20px;
+    background-color: #2c3941;
+    border: none;
+    color: #d4c9b2;
+}
+
+#input:focus {
+    box-shadow: none;
+    color: antiquewhite;
+}
+
+#inner-box {
+    margin: 0 15px;
+}
+
+#img {
+    margin: 7px 10px;
+}
+
+#entry:selected {
+    background-color: #a4c078;
+    border-radius: 5px;
+}
+
+#text {
+    color: #d4c9b2;
+}
+
+#text:selected {
+    color: #2D353B;
+}
