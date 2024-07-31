@@ -1,8 +1,0 @@
-@-moz-document url("about:newtab"), url("about:home"), url(about:privatebrowsing) {
-    body {
-        background-color: yellow !important;
-        .personalizeButtonWrapper {
-            display: none;
-        }
-    }
-}

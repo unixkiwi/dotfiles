@@ -1,7 +1,8 @@
 #
 # WOFI CONFIG
-# by Kiwi
+# by unixkiwi
 #
+
 
 show=drun
 width=650
