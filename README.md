@@ -11,3 +11,6 @@
 + Powermenu 🔌: Custom Rofi Menu
 + Lockscreen 🔒: Swaylock
 + Other: Swayidle, blueman, Alacritty, Neofetch ;)
+
+## Todo ✅
+- add installation script
