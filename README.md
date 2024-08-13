@@ -1,6 +1,7 @@
 # This is still work in progress
 ## These are my personal Arch 🐧 dotfiles
 👋 Welcome to my personal Arch 🐧 dotfiles. These are my software side specs:
++ Distro 🐧: Arch Linux btw
 + WM 🖥️: Hyprland
 + Font 🖋️: JetBrains Mono Nerd Font
 + Launcher 🔎: Wofi
