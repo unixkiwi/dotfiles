@@ -1,11 +1,6 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 15,
-  "spacing": 4,
-  "margin-top": 5,
-  "margin-left": 5,
-  "margin-right": 5,
 
   "modules-left": [
     "hyprland/workspaces"
@@ -37,19 +32,20 @@
   },
 
   "hyprland/workspaces": {
-	  "format": "{name}",
+	  "format": "{icon}",
 	  "format-icons": {
 		  // "1": "",
 		  // "2": "",
 		  // "3": "",
 		  // "4": "",
 		  // "5": "",
-		  "active": "",
+		  "active": "",
 		  "default": ""
 	  },
     "persistent-workspaces": {
-      "*": 5
-       }
+      "eDP-1": [1, 2, 3, 4, 5],
+      "DP-1" : [6, 7, 8, 9, 10]
+    }
   },
 
   "pulseaudio": {
@@ -95,6 +91,8 @@
   },
 
   "clock": {
+    "format": "{:%H:%M:%S}",
+    "interval": 1,
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>",
     "on-click" : "swaync-client -t"
   },
@@ -103,5 +101,4 @@
     "format" : "⏻ ",
     "on-click": "/home/kiwi/scripts/power_menu"
   }
-
 }
