@@ -121,3 +121,4 @@ source $ZSH/oh-my-zsh.sh
 
 alias c=clear
 
+python=python3
