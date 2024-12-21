@@ -4,6 +4,9 @@
   programs.zsh = {
     enable = true;
     autocd = true;
+    enableCompletion = true;
+    autosuggestion = true;
+    syntaxHighlighting.enable = true;
 
     oh-my-zsh = {
       enable = true;
