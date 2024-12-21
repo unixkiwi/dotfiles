@@ -5,7 +5,8 @@
     enable = true;
     autocd = true;
     enableCompletion = true;
-    autosuggestion.enable = true;
+    #autosuggestion.enable = true;
+    enableAutosuggestions = true;
     syntaxHighlighting.enable = true;
 
     #oh-my-zsh = {
