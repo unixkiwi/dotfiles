@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     zsh-autosuggestions
+    zsh-autocomplete
   ];
   
   programs.zsh = {
