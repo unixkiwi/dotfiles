@@ -19,22 +19,9 @@
       searchDownKey = ["\\eOB"];
     };
 
-    zplug = {
-      enable = true;
-      plugins = [
-        { name = "zsh-users/zsh-autosuggestions"; }
-        { name = "romkatv/powerlevel10k"; tags = [ as:theme depth:1 ]; }
-        { name =  "ohmyzsh/ohmyzsh oh-my-zsh"; }
-        { name =  "ajeetdsouza/zoxide"; }
-        { name =  "marlonrichert/zsh-autocomplete"; }
-        { name =  "marlonrichert/zsh-edit"; }
-        { name =  "zsh-users/zsh-autosuggestions"; }
-        { name =  "ptavares/zsh-exa"; }
-        { name =  "zsh-users/zsh-syntax-highlighting"; }
-        { name =  "mbenford/zsh-tmux-auto-title"; }
-        { name =  "zsh-users/zsh-history-substring-search"; }
-      ];
-    };
+    interactiveShellinit = ''
+      source ${pkgs.zsh-autosuggestions}/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+    '';
 
     #oh-my-zsh = {
     #  enable = true;
