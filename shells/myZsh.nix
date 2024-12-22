@@ -26,6 +26,7 @@
 
     oh-my-zsh = {
       enable = true;
+      plugins = [ "git" ];
       extraConfig = ''
                 setopt autocd
                 setopt globdots
