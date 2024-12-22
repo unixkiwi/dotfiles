@@ -1,10 +1,6 @@
 { config, lib, pkgs, ... }:
 
-{
-  home.packages = with pkgs; [
-    zsh-autocomplete
-  ];
-  
+{ 
   programs.zsh = {
     enable = true;
     autocd = true;
