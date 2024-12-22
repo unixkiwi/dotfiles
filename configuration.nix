@@ -85,14 +85,6 @@
     vim
     wget
     git
-    neofetch
-    eww
-    waybar
-    wofi
-    alacritty
-    kitty
-    librewolf
-    vscode
     helix
     eza
   ];
