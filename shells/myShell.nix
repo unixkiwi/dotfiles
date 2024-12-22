@@ -21,7 +21,7 @@ in
     ./myZsh.nix
   ];
 
-  enviroment.shellAliases = aliases;
+  home.shellAliases = aliases;
 
   #programs.bash = {
   #  enable = true;
