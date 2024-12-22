@@ -18,6 +18,7 @@
     neofetch
     bat
     nerd-fonts.fira-code
+    btop
   
     librewolf
     alacritty
