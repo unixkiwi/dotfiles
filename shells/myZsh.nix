@@ -50,5 +50,6 @@
   home.file.".p10k.zsh" = {
     source = ./.p10k.zsh;
     target = ".p10k.zsh";
+    force = true;  
   };
 }
