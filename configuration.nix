@@ -64,6 +64,7 @@
   # services.libinput.enable = true;
 
   # Sets the default shell for all users
+  programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
