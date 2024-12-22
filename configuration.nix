@@ -33,8 +33,8 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
-  services.displayManager.gdm.enable = true;
-  services.desktopManager.gnome.enable = true;
+  xserver.displayManager.gdm.enable = true;
+  xserver.desktopManager.gnome.enable = true;
   
   programs.dconf.enable = true;
 
