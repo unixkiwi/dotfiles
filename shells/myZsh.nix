@@ -1,5 +1,8 @@
 { config, lib, pkgs, ... }:
 
+let
+  p10kPath = ./.p10k.zsh;
+in
 { 
   programs.zsh = {
     enable = true;
@@ -36,6 +39,11 @@
                 setopt autocd
                 setopt globdots
       '';
+    };
+
+    home.file.".p10k.zsh" = {
+        source = ${p10kPath};
+        target = ".p10k.zsh";
     };
 
     initExtraFirst = ''
