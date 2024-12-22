@@ -22,10 +22,6 @@
   # Set your time zone.
   time.timeZone = "Europe/Berlin";
 
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
   console = {
@@ -35,15 +31,12 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Enable the X11 windowing system.
-  #services.xserver.enable = true;
+  services.xserver.enable = true;
 
+  services.displayManager.sdd.enable = true;
   services.desktopManager.plasma6.enable = true;
-  services.displayManager.defaultSession = "plasma";
-
+  
   programs.dconf.enable = true;
-
-  services.displayManager.sddm.enable = true;  
-  services.displayManager.sddm.wayland.enable = true;
 
   # Configure keymap in X11
   # services.xserver.xkb.layout = "us";
