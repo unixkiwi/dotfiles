@@ -21,7 +21,7 @@
 
     plugins = [
         { name = "zsh-users/zsh-autosuggestions"; }
-        { name = "romkatv/powerlevel10k"; tags = [ as:theme depth:1 ]; }
+        { name = "romkatv/powerlevel10k"; }
         { name =  "ohmyzsh/ohmyzsh oh-my-zsh"; }
         { name =  "ajeetdsouza/zoxide"; }
         { name =  "marlonrichert/zsh-autocomplete"; }
