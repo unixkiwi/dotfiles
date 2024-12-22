@@ -11,6 +11,8 @@
 
   home.stateVersion = "24.11"; # Please read the comment before changing.
 
+  nixpkgs.config.allowUnfree = true;
+
   home.packages = with pkgs; [
     hello
     neofetch
