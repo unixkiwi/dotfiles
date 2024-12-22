@@ -1,8 +1,5 @@
 { config, lib, pkgs, ... }:
 
-let
-  p10kPath = ./.p10k.zsh;
-in
 { 
   programs.zsh = {
     enable = true;
@@ -42,7 +39,7 @@ in
     };
 
     home.file.".p10k.zsh" = {
-        source = ${p10kPath};
+        source = ./p10k.zsh;
         target = ".p10k.zsh";
     };
 
