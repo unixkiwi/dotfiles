@@ -2,7 +2,6 @@
 
 {
   home.packages = with pkgs; [
-    zsh-autosuggestions
     zsh-autocomplete
   ];
   
@@ -19,8 +18,9 @@
       searchDownKey = ["\\eOB"];
     };
 
-    interactiveShellinit = ''
-      source ${pkgs.zsh-autosuggestions}/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+    initExtra = ''
+      setopt NO_CASE_GLOB
+      zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=*      r:|=*' 'l:|=* r:|=*'
     '';
 
     #oh-my-zsh = {
