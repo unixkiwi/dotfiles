@@ -38,11 +38,6 @@
       '';
     };
 
-    home.file.".p10k.zsh" = {
-        source = ./p10k.zsh;
-        target = ".p10k.zsh";
-    };
-
     initExtraFirst = ''
       source ~/.p10k.zsh
     '';
@@ -50,5 +45,10 @@
     initExtra = ''
       bindkey -M menuselect '^[[B' .accept-line
     '';
+  };
+
+  home.file.".p10k.zsh" = {
+    source = ./p10k.zsh;
+    target = ".p10k.zsh";
   };
 }
