@@ -31,17 +31,17 @@
       plugins = [ "z" ];
       extraConfig = ''
                 # Required for autocomplete with box: https://unix.stackexchange.com/a/778868
-                zstyle ':completion:*' completer _expand _complete _ignored _approximate _expand_alias
-                zstyle ':autocomplete:*' default-context curcontext 
-                zstyle ':autocomplete:*' min-input 0
+                zstyle ':completion:*' # completer _expand _complete _ignored _approximate _expand_alias
+                # zstyle ':autocomplete:*' default-context curcontext 
+                # zstyle ':autocomplete:*' min-input 0
 
                 setopt HIST_FIND_NO_DUPS
 
                 autoload -Uz compinit
                 compinit
 
-                setopt autocd  # cd without writing 'cd'
-                setopt globdots # show dotfiles in autocomplete list
+                setopt autocd
+                setopt globdots
       '';
     };
 
