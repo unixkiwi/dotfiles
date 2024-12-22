@@ -22,6 +22,11 @@
           sha256 = "1357hygrjwj5vd4cjdvxzrx967f1d2dbqm2rskbz5z1q6jri1hm3";
         };
       }
+      {                                                                                   
+        name = "powerlevel10k";                                                           
+        src = pkgs.zsh-powerlevel10k;                                                     
+        file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";                         
+      }
     ];
 
     oh-my-zsh = {
@@ -32,6 +37,10 @@
                 setopt globdots
       '';
     };
+
+    initExtraFirst = ''
+      source ~/.p10k.zsh
+    '';
 
     initExtra = ''
       bindkey -M menuselect '^[[B' .accept-line
