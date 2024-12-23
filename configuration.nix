@@ -141,7 +141,7 @@
 
   # Disk/Mounting stuff
   services.devom.enable = true;
-  service.gvfs.enable = true;
+  services.gvfs.enable = true;
   services.udisks2.enable = true;
 
   # networking.firewall.allowedTCPPorts = [ ... ];
