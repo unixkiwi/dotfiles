@@ -2,7 +2,7 @@
 
 {
   programs.librewolf = {
-    #enable = true;
+    enable = true;
     settings = {
       "general.autoScroll" = true;
     };

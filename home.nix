@@ -15,7 +15,7 @@
 
   home.packages = with pkgs; [
     # Browser  
-    librewolf
+    #librewolf
 
     # Terminals
     alacritty
