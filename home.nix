@@ -3,7 +3,7 @@
 {
 
   imports = [
-    ./modules/shells/myShell.nix
+    ./modules
   ];
 
   home.username = "kiwi";

@@ -15,6 +15,7 @@ in
 
   home.packages = with pkgs; [
     eza
+    zsh
   ];
 
   imports = [
@@ -22,14 +23,4 @@ in
   ];
 
   home.shellAliases = aliases;
-
-  #programs.bash = {
-  #  enable = true;
-  #  shellAliases = {
-  #    ls = "exa -1 --icons=always";
-  #    ll = "exa -lh --icons=always";
-  #    la = "exa -lah --icons=always";
-  #    c = "clear";
-  #  };
-  #};  
 }
