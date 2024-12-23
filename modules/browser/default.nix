@@ -2,7 +2,6 @@
 
 {
   imports = [
-    ./shell
-    ./browser
+    ./librewolf.nix
   ];
 }
