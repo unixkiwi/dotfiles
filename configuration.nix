@@ -30,24 +30,26 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  # Enable the X11 windowing system.
+  ## X11 
   services.xserver.enable = true;
-  services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
 
+  # SDDM
+  services.displayManager.sddm = {
+    enable = true;
+    wayland.enable = true
+  };
+
+  # KDE Plasma 6 DE
+  services.desktopManager.plasma6.enable = true;
+  # is needed bc of wayland
   services.displayManager.defaultSession = "plasma";
-  services.displayManager.sddm.wayland.enable = true;
   
   programs.dconf.enable = true;
 
-  # Configure keymap in X11
-  # services.xserver.xkb.layout = "us";
-  # services.xserver.xkb.options = "eurosign:e,caps:escape";
+  # X11 Keyboard Layout
+  services.xserver.xkb.layout = "de";
 
-  # Enable CUPS to print documents.
-  # services.printing.enable = true;
-
-  # Enable sound.
+    # Enable sound.
   # hardware.pulseaudio.enable = true;
   # OR
   # services.pipewire = {
@@ -55,54 +57,92 @@
   #   pulse.enable = true;
   # };
 
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.libinput.enable = true;
+  # Bluetooth
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+  };
 
-  # Sets the default shell for all users
+  # Touchpad support
+  services.libinput.enable = true;
+
+  # Default Shell
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
+  # User 'kiwi'
   users.users.kiwi = {
     isNormalUser = true;
-    extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
-  #   packages = with pkgs; [
-  #     tree
-  #   ];
+    extraGroups = [ "wheel" "libvirtd" ];
   };
 
-  # programs.firefox.enable = true;
-
-  #programs.hyprland = {
-  #  enable = true;
-  #  xwayland.enable = true;
-  #  portalPackage = pkgs.xdg-desktop-portal-hyprland;
-  #};
-
+  # Allow unfree(not open source) pkgs
   nixpkgs.config.allowUnfree = true;
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
+  # System-wide Packages
   environment.systemPackages = with pkgs; [
-    vim
+    # System
     wget
-    git
-    helix
+    curl
+    zip
+    unzip
+    psmisc
+    bluez
+    bluez-tools
+    libnotify
+    xdg-utils
+    xdg-desktop-portal
+    pipewire
+    fzf
+    bat
     eza
+    tree
+
+    # Fonts
+    nerd-fonts.fira-code
+
+    # Desktop
+    mc
+    git
+    networkmanager
+    networkmanagerapplet
+    btop
+    neofetch # :)
+
+    # Gtk
+    gtk2
+    gtk3
+    gtk4
+
+    # Qt
+    qt5.full
+    qt6.full    
+
+    # Editor
+    vim
+    nano
+    helix
   ];
 
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
+  # Virual machines
+  programs.virt-manager.enable = true;
 
-  # List services that you want to enable:
+  users.groups.libvirtd.members = [ "kiwi" ];
 
-  # Enable the OpenSSH daemon.
+  virtualisation = {
+    libvirtd.enable = true;
+    spiceUSBRedirection.enable = true;
+  };
+
+  ## Some services
+  
+  # SSH
   services.openssh.enable = true;
+
+  # Disk/Mounting stuff
+  services.devom.enable = true;
+  service.gvfs.enable = true;
+  services.udisks2.enable = true;
 
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];

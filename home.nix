@@ -3,7 +3,7 @@
 {
 
   imports = [
-    ./shells/myShell.nix
+    ./modules/shells/myShell.nix
   ];
 
   home.username = "kiwi";
@@ -14,16 +14,23 @@
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
-    hello
-    neofetch
-    bat
-    nerd-fonts.fira-code
-    btop
-  
+    # Browser  
     librewolf
+
+    # Terminals
     alacritty
+    kitty
+
+    # Filemanager
     mc
+    doublecmd
+    
+
+    # Editors
     vscode
+    jetbrains.idea-community-bin
+    jetbrains.pycharm-community-bin
+    kdePackages.kate
     # # You can also create simple shell scripts directly inside your
     # # configuration. For example, this adds a command 'my-hello' to your
     # # environment:
