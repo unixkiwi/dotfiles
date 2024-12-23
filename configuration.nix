@@ -36,7 +36,7 @@
   # SDDM
   services.displayManager.sddm = {
     enable = true;
-    wayland.enable = true
+    wayland.enable = true;
   };
 
   # KDE Plasma 6 DE
