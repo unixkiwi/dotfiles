@@ -15,8 +15,10 @@
 
   home.packages = with pkgs; [
     # Browser  
+    # disabled bc of programs.librewolf.enable
+    # in modules/browser/librewolf.nix conflicts with pkgs
     #librewolf
-
+    
     # Terminals
     alacritty
     kitty
