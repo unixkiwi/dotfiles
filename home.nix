@@ -55,7 +55,7 @@
     obsidian
 
     # LibreOffic
-    libreoffice-bin
+    libreoffice
 
     # Photo stuff
     darktable
