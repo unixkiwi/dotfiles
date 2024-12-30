@@ -14,7 +14,10 @@
   # Allow fc to find fonts from home-manager
   fonts.fontconfig.enable = true;
 
-  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config = {
+    allowUnfree = true;
+    android_sdk.accept_license = true;
+  };
 
   home.packages = with pkgs; [
     # Browser  
