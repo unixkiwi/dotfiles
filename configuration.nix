@@ -101,7 +101,7 @@
     tree
 
     # Fonts
-    nerd-fonts.caskaydia-cove
+    nerd-fonts.caskaydia-mono
 
     # Desktop
     mc
