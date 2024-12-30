@@ -49,7 +49,7 @@
 
     # Minecraft
     prismlauncher
-    minecraft
+    # broken! minecraft
 
     # Notes
     obsidian
