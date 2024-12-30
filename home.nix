@@ -44,7 +44,7 @@
     vscode
     jetbrains.idea-community-bin
     jetbrains.pycharm-community-bin
-    android-studio-full
+    #android-studio-full
     kdePackages.kate
 
     # Minecraft
