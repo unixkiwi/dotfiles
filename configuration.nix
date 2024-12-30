@@ -101,6 +101,7 @@
     tree
 
     # Fonts
+    nerd-fonts.fira-code
     nerd-fonts.caskaydia-mono
 
     # Desktop

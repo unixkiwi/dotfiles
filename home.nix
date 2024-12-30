@@ -26,7 +26,10 @@
     # Filemanager
     mc
     doublecmd
-    
+
+    # Fonts
+    nerd-fonts.caskaydia-cove
+    nerd-fonts.fira-code    
 
     # Editors
     vscode
