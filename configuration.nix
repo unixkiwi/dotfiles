@@ -125,7 +125,9 @@
     vim
     nano
     helix
-
+    emacs
+    neovim
+    
     ## Programming Languages
     jdk
     python3Full

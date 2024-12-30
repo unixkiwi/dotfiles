@@ -21,6 +21,9 @@
     # disabled bc of programs.librewolf.enable
     # in modules/browser/librewolf.nix conflicts with pkgs
     #librewolf
+
+    # Utils
+    gparted
     
     # Terminals
     alacritty
@@ -38,7 +41,37 @@
     vscode
     jetbrains.idea-community-bin
     jetbrains.pycharm-community-bin
+    android-studio-full
     kdePackages.kate
+
+    # Minecraft
+    prismlauncher
+    minecraft
+
+    # Notes
+    obsidian
+
+    # LibreOffic
+    libreoffice-bin
+
+    # Photo stuff
+    darktable
+    gimp
+    kdePackages.gwenview
+
+    # Video Stuff
+    vlc
+    ffmpeg
+
+    # Mouse
+    piper
+
+    # Recording
+    obs-studio
+
+    # Signal
+    signal-desktop
+        
     # # You can also create simple shell scripts directly inside your
     # # configuration. For example, this adds a command 'my-hello' to your
     # # environment:
