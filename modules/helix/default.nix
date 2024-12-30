@@ -1,7 +1,10 @@
 { config, pkgs, ... }: 
 
 {
-  programs.helix.settings = {
-    theme = "everforest_dark";
+  programs.helix = {
+    enable = true;
+    settings = {
+      theme = "everforest_dark";
+    };
   };
 }
