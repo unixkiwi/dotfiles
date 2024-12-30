@@ -4,5 +4,7 @@
   imports = [
     ./shell
     ./browser
+    ./virt_man
+    ./helix
   ];
 }
