@@ -5,6 +5,9 @@ let
     # Clear
     "c" = "clear";
 
+    # Cat alternative
+    "cat" = "bat";
+
     # Listing stuff
     "ls" = "eza -1 --icons=always";
     "ll" = "eza -lh --icons=always";
