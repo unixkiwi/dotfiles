@@ -71,7 +71,13 @@
   users.defaultUserShell = pkgs.zsh;
 
   # Stylix
-  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/everforest.yaml";
+  stylix = {
+    enable = true;
+  
+    #polarity = "dark";
+  
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
+  };
 
   # User 'kiwi'
   users.users.kiwi = {
