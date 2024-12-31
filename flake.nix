@@ -21,10 +21,10 @@
         inherit system;
         modules = [ 
           ./configuration.nix
-          home-manager.nixosModules.home-manager with home-manager; {
-            useGlobalPkgs = true;
-            useUserPackages = true;
-            users.kiwi = import ./home.nix;
+          home-manager.nixosModules.home-manager {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.kiwi = import ./home.nix;
           }
           stylix.nixosModules.stylix
         ];
