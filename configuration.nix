@@ -72,7 +72,7 @@
 
   # Stylix
   stylix = {
-    #enable = true;
+    enable = true;
 
     image = ./wallpapers/nixos_everforest.png;
   
