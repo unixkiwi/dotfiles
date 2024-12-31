@@ -26,7 +26,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
 
-            home-manager.backupFileExtension = "bkp";
+            home-manager.backupFileExtension = "hm_backup";
                       
             home-manager.users.kiwi = import ./home.nix;
           }
