@@ -95,6 +95,7 @@
     # System
     gcc
     glibc
+    nixd
     wget
     curl
     zip
