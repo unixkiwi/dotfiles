@@ -84,7 +84,7 @@
   ];
 
   home.file = {
-    "gtkrc-2.0".force = true;
+
   };
 
   home.sessionVariables = {
