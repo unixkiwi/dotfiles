@@ -73,6 +73,8 @@
   # Stylix
   stylix = {
     enable = true;
+
+    image = ./wallpapers/nixos_everforest.png;
   
     #polarity = "dark";
   
