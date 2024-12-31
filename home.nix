@@ -84,7 +84,7 @@
   ];
 
   home.file = {
-
+    *.force = true;
   };
 
   home.sessionVariables = {
