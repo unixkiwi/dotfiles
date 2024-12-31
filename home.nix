@@ -6,8 +6,6 @@
     ./modules
   ];
 
-  home-manager.backupFileExtension = "backup";
-
   home.username = "kiwi";
   home.homeDirectory = "/home/kiwi";
 
