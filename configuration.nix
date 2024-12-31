@@ -70,6 +70,9 @@
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
 
+  # Stylix
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/everforest.yaml";
+
   # User 'kiwi'
   users.users.kiwi = {
     isNormalUser = true;
