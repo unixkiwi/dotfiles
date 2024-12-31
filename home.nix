@@ -83,9 +83,7 @@
     # '')
   ];
 
-  home.file = {
-    *.force = true;
-  };
+  home.file = {};
 
   home.sessionVariables = {
     # EDITOR = "emacs";
