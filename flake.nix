@@ -8,6 +8,7 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     stylix.url = "github:danth/stylix";
+
   };
        
   outputs = { self, nixpkgs, home-manager, stylix, ... }:
