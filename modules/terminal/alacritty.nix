@@ -12,5 +12,5 @@
       cursor.blink_interval = 500;
       cursor.thickness = 0.2;
     };
-  }
+  };
 }
