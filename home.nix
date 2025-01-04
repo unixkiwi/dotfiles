@@ -78,7 +78,7 @@
   ];
 
   home.file = {
-    ".gtkrc-2.0.hm-bkp".force = true;
+
   };
 
   home.sessionVariables = {
