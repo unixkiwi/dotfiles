@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./gtk
     ./shell
     ./browser
     ./virt_man
