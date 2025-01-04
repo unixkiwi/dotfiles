@@ -169,7 +169,7 @@
   system.userActivationScripts = {
     # remove all .hm-bkp home-manager backup files, to prevent conflicts
     removeConflictingBkpFiles = {
-      text  ''
+      text = ''
         find /home/kiwi/ -type f -name "*.hm-bkp" -delete
       '';
     };
