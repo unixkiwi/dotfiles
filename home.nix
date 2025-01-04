@@ -19,18 +19,12 @@
     android_sdk.accept_license = true;
   };
 
-  programs = {
-    alacritty.enable = true;
-    kitty.enable = true;
-  };
-
   home.packages = with pkgs; [
     # Utils
     gparted
     
     # Terminals
-    #alacritty
-    #kitty
+    kitty
 
     # Filemanager
     mc
