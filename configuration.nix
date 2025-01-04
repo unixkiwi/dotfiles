@@ -32,6 +32,7 @@
 
   ## X11 
   services.xserver.enable = true;
+  programs.xwayland.enable = true;
 
   # SDDM
   services.displayManager.sddm = {
@@ -71,15 +72,15 @@
   users.defaultUserShell = pkgs.zsh;
 
   # Stylix
-  stylix = {
-    #enable = true;
-
-    image = ./wallpapers/nixos_everforest.png;
-  
-    polarity = "dark";
-  
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/everforest.yaml";
-  };
+  #stylix = {
+  #  enable = true;
+  #
+  #  image = ./wallpapers/nixos_everforest.png;
+  #
+  #  polarity = "dark";
+  #
+  #  base16Scheme = "${pkgs.base16-schemes}/share/themes/everforest.yaml";
+  #};
 
   # User 'kiwi'
   users.users.kiwi = {
@@ -125,9 +126,9 @@
     neofetch # :)
 
     # Gtk
-    gtk2
-    gtk3
-    gtk4
+    #gtk2
+    #gtk3
+    #gtk4
 
     # Qt
     qt5.full
