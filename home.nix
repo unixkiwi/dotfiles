@@ -19,18 +19,18 @@
     android_sdk.accept_license = true;
   };
 
-  home.packages = with pkgs; [
-    # Browser  
-    # disabled bc of programs.librewolf.enable
-    # in modules/browser/librewolf.nix conflicts with pkgs
-    #librewolf
+  programs = {
+    alacritty.enable = true;
+    kitty.enable = true;
+  };
 
+  home.packages = with pkgs; [
     # Utils
     gparted
     
     # Terminals
-    alacritty
-    kitty
+    #alacritty
+    #kitty
 
     # Filemanager
     mc
