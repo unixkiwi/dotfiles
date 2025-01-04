@@ -125,15 +125,6 @@
     btop
     neofetch # :)
 
-    # Gtk
-    #gtk2
-    #gtk3
-    #gtk4
-
-    # Qt
-    qt5.full
-    qt6.full    
-
     # Editor
     vim
     nano

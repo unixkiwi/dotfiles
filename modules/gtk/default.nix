@@ -11,7 +11,7 @@
 
     theme = {
       package = pkgs.everforest-gtk-theme;
-      name = "Everforest-Dark";
+      name = "Everforest-Dark-BL";
     };
   };
 }
