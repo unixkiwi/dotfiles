@@ -165,6 +165,16 @@
   services.gvfs.enable = true;
   services.udisks2.enable = true;
 
+  # Startup scripts
+  system.userActivationScripts = {
+    # remove all .hm-bkp home-manager backup files, to prevent conflicts
+    removeConflictingBkpFiles = {
+      text  ''
+        find /home/kiwi/ -type f -name "*.hm-bkp" -delete
+      '';
+    };
+  };
+
   system.stateVersion = "24.11"; # Did you read the comment?
 }
 
