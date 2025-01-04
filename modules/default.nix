@@ -6,5 +6,6 @@
     ./browser
     ./virt_man
     ./helix
+    ./terminal
   ];
 }
