@@ -77,13 +77,9 @@
     # '')
   ];
 
-  # Startup scripts
-  # delete the ~/.gtkrc-2.0.hm-bkp because hm can't overwrite for some reason
-  home.activation.removeGtkRcBackup = lib.hm.dag.entryAfter ["writeBoundary"] ''
-    rm -f ${config.home.homeDirectory}/.gtkrc-2.0.hm-bkp
-  '';
-
-  home.file = {};
+  home.file = {
+    ".gtkrc-2.0.hm-bkp".force = true;
+  };
 
   home.sessionVariables = {
     # EDITOR = "emacs";
