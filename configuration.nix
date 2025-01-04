@@ -72,15 +72,15 @@
   users.defaultUserShell = pkgs.zsh;
 
   # Stylix
-  #stylix = {
-  #  enable = true;
-  #
-  #  image = ./wallpapers/nixos_everforest.png;
-  #
-  #  polarity = "dark";
-  #
-  #  base16Scheme = "${pkgs.base16-schemes}/share/themes/everforest.yaml";
-  #};
+  stylix = {
+    enable = true;
+  
+    image = ./wallpapers/nixos_everforest.png;
+  
+    polarity = "dark";
+  
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/everforest.yaml";
+  };
 
   # User 'kiwi'
   users.users.kiwi = {
