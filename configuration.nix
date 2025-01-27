@@ -38,18 +38,22 @@
 
   ## X11 
   services.xserver.enable = true;
-  programs.xwayland.enable = true;
+  #programs.xwayland.enable = true;
+
+  services.xserver.windowManager.i3 = {
+    enable = true;
+  };
 
   # SDDM
   services.displayManager.sddm = {
     enable = true;
-    wayland.enable = true;
+    #wayland.enable = true;
   };
 
   # KDE Plasma 6 DE
   services.desktopManager.plasma6.enable = true;
   # is needed bc of wayland
-  services.displayManager.defaultSession = "plasma";
+  #services.displayManager.defaultSession = "plasma";
   
   programs.dconf.enable = true;
 
