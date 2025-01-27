@@ -7,13 +7,19 @@
     ];
 
   # GRUB 2
-  boot.loader.grub.enable = true;
+  # boot.loader.grub.enable = true;
   # boot.loader.grub.efiSupport = true;
   # boot.loader.grub.efiInstallAsRemovable = true;
   # boot.loader.efi.efiSysMountPoint = "/boot/efi";
   # Define on which hard drive you want to install Grub.
-  boot.loader.grub.device = "/dev/vda"; # or "nodev" for efi only
-  
+  # boot.loader.grub.device = "/dev/vda"; # or "nodev" for efi only
+
+  # Systemd boot
+  boot.loader = {
+    systemd-boot.enable = true;
+    efi.canTouchEfiVariables = true;
+  };
+
   networking.hostName = "nixos"; # Define your hostname.
 
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -74,11 +80,8 @@
   # Stylix
   stylix = {
     enable = true;
-  
-    image = ./wallpapers/nixos_everforest.png;
-  
+    image = ./wallpapers/nixos_everforest.png; 
     polarity = "dark";
-  
     base16Scheme = "${pkgs.base16-schemes}/share/themes/everforest.yaml";
   };
 
@@ -114,8 +117,9 @@
     tree
 
     # Fonts
-    nerd-fonts.fira-code
-    nerd-fonts.caskaydia-mono
+    fira-code
+    #nerd-fonts.fira-code
+    #nerd-fonts.caskaydia-mono
 
     # Desktop
     mc

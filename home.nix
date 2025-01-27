@@ -36,8 +36,8 @@
 
     # Editors
     vscode
-    jetbrains.idea-community-bin
-    jetbrains.pycharm-community-bin
+    #jetbrains.idea-community-bin
+    #jetbrains.pycharm-community-bin
     #android-studio-full
     kdePackages.kate
 
