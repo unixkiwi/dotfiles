@@ -4,7 +4,7 @@
   imports = [
     ./shell
     ./browser
-    ./virt_man
+    #./virt_man
     ./helix
     ./terminal
     ./wm
