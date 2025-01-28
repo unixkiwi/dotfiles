@@ -8,7 +8,7 @@ in
 {
   system.activationScripts.flatpakManagement = {
     text = ''
-      ${pkgs.flatpak}/bin/flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+      ${pkgs.flatpak}/bin/flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
       installedFlats=$(${pkgs.flatpak}/bin/flatpak list --app --columns=application)
       
