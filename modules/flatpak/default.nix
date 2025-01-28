@@ -15,7 +15,7 @@ in
       for installed in $installedFlats; do
         if ! echo ${toString flats} | ${pkgs.gnugrep}/bin/grep -q $installed; then
           echo "Removing $installed bc it's not in the wanted flats"
-          ${pkgs.flatpak}/bin/flatpak uninstall -y --nointeractive $installed
+          ${pkgs.flatpak}/bin/flatpak uninstall -y --noninteractive $installed
         fi
       done
 
