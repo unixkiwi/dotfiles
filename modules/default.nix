@@ -7,5 +7,6 @@
     ./virt_man
     ./helix
     ./terminal
+    ./wm
   ];
 }
