@@ -17,7 +17,7 @@
       defaultWorkspace = "workspace number 1";
 
       startup = [
-        { command = "xrandr --output Virtual-1 --mode 1920x1080"; always = true }
+        { command = "xrandr --output Virtual-1 --mode 1920x1080"; always = true };
       ];
     };
   };
