@@ -4,9 +4,10 @@
   imports = [
     ./shell
     ./browser
-    #./virt_man
     ./helix
     ./terminal
     ./wm
   ];
+
+  #./virt_man
 }
