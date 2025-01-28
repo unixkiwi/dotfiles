@@ -2,9 +2,9 @@
 
 {
   imports = [
-      ./hardware-configuration.nix
+    ./hardware-configuration.nix
 
-      ./modules/default.nix
+    #./modules/default.nix
   ];
 
   # GRUB 2
