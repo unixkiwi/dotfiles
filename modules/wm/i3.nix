@@ -5,7 +5,7 @@
     enable = true;
     package = pkgs.i3;
     config = {
-      modifier = "Mod1";
+      modifier = "Mod4";
     };
   };
 }
