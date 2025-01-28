@@ -1,12 +1,11 @@
 { config, lib, pkgs, ... }:
 
 {
-  imports =
-    [
+  imports = [
       ./hardware-configuration.nix
 
       ./modules/default.nix
-    ];
+  ];
 
   # GRUB 2
   # boot.loader.grub.enable = true;
