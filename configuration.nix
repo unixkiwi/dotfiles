@@ -172,6 +172,9 @@
   services.gvfs.enable = true;
   services.udisks2.enable = true;
 
+  # Flatpak
+  services.flatpak.enable = true;
+  
   # Startup scripts
   system.userActivationScripts = {
     # remove all .hm-bkp home-manager backup files, to prevent conflicts
