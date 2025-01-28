@@ -11,7 +11,7 @@
       keybindings = let modifier = config.xsession.windowManager.i3.config.modifier; in lib.mkOptionDefault {
         "${modifier}+Return" = "exec alacritty";
         "${modifier}+q" = "kill";
-        "${modifier}+v" = "toggle_floating";
+        "${modifier}+v" = "floating";
       };
       
       defaultWorkspace = "workspace number 1";
