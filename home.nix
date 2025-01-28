@@ -13,11 +13,7 @@
 
   # Allow fc to find fonts from home-manager
   fonts.fontconfig.enable = true;
-
-  services.flatpak.packages = [
-    "net.sf.VICE"
-  ];
-  
+   
   #nixpkgs.config = {
   #  allowUnfree = true;
   #  android_sdk.accept_license = true;

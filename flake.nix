@@ -8,11 +8,9 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     stylix.url = "github:danth/stylix";
-
-    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
   };
        
-  outputs = { self, nixpkgs, home-manager, stylix, nix-flatpak, ... }:
+  outputs = { self, nixpkgs, home-manager, stylix, ... }:
   let
     system = "x86_64-linux";
     lib = nixpkgs.lib;
@@ -22,8 +20,6 @@
       nixos = lib.nixosSystem {
         inherit system;
         modules = [
-          nix-flatpak.nixosModules.nix-flatpak
-        
           ./configuration.nix
           home-manager.nixosModules.home-manager 
           {
