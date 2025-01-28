@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   xsession.windowManager.i3 = {
@@ -6,6 +6,15 @@
     package = pkgs.i3;
     config = {
       modifier = "Mod4";
+      focus.followMouse = true;
+
+      keybindings = let modifier = config.xsession.windowManager.i3.config.modifier; in lib.mkOptionDefault {
+        "${modifier}+Return" = "exec alacritty";
+        "${modifier}+q" = "kill";
+        "${modifier}+v" = "toggle_floating";
+      };
+      
+      defaultWorkspace = "workspace number 1";
     };
   };
 }
