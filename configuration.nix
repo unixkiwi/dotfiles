@@ -40,6 +40,9 @@
   services.xserver.enable = true;
   #programs.xwayland.enable = true;
 
+  services.xserver.windowManager.i3.enable = true;
+  services.displayManager.defaultSession = "none+i3";
+
   # SDDM
   services.displayManager.sddm = {
     enable = true;
