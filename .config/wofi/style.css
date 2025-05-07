@@ -1,0 +1,31 @@
+#window {
+
+  border: 1px solid #aaa;
+  border-radius: 10px;
+
+}
+
+#outer-box {
+  padding: 7px;
+}
+
+#input {
+  border: 1px solid #4f4f4f;
+  background: #2f2f2f;
+  margin: 0px 0px 5px 0px;
+  color: #9f9f9f;
+}
+
+#entry:selected {
+  background: #4f4f4f;
+  border: none;
+}
+
+#img {
+  padding-right: 7px;
+}
+
+#text {
+   font-family: monospace;
+   font-size: 15px;
+}
