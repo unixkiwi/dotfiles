@@ -7,6 +7,8 @@ To move those files to your system you first need to clone this repo:
 ``
  $ git clone https://github.com/unixkiwi/dotfiles.git
 ``
+
+
 After that you could move all files by hand, BUT i have a better way for you:
 *This repository was made for GNU Stow, a symlink manager.*
 To move all files go to the cloned directory and run the following command:
