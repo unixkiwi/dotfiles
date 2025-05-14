@@ -18,6 +18,13 @@ function fish_user_key_bindings
     bind -M insert \t accept-autosuggestion
 end
 
-starship init fish | source # init starship
-zoxide init --cmd cd fish | source # init zoxide (autojump)
+# STARSHIP
+function starship_transient_prompt_func
+    starship module character
+end
 
+starship init fish | source # init starship
+enable_transience
+# STARSHIP END
+
+zoxide init --cmd cd fish | source # init zoxide (autojump)
