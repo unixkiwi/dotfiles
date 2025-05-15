@@ -9,6 +9,7 @@ alias ll "ls -lh"
 
 fish_add_path ~/flutter_sdk/flutter/bin
 fish_add_path ~/.local/bin
+fish_add_path ~/.cargo/bin
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
@@ -26,5 +27,6 @@ end
 starship init fish | source # init starship
 enable_transience
 # STARSHIP END
+#
 
 zoxide init --cmd cd fish | source # init zoxide (autojump)
