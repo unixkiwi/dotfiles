@@ -6,6 +6,7 @@ alias c clear
 alias ls "eza --icons=always --group-directories-first -F"
 alias la "ls -lah"
 alias ll "ls -lh"
+alias edit "ms-edit"
 
 fish_add_path ~/flutter_sdk/flutter/bin
 fish_add_path ~/.local/bin
@@ -30,5 +31,7 @@ enable_transience
 #
 
 zoxide init --cmd cd fish | source # init zoxide (autojump)
+
+thefuck --alias | source
 
 fish_add_path /home/kiwi/.spicetify
