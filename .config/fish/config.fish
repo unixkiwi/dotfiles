@@ -6,7 +6,7 @@ alias c clear
 alias ls "eza --icons=always --group-directories-first -F"
 alias la "ls -lah"
 alias ll "ls -lh"
-alias edit "ms-edit"
+alias edit msedit
 
 fish_add_path ~/flutter_sdk/flutter/bin
 fish_add_path ~/.local/bin
