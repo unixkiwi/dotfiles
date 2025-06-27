@@ -1,17 +1,33 @@
+### ENV VAR's ###
 set fish_greeting
-
 set CUDA_VISIBLE_DEVICES 0,1
+set EDITOR nvim
 
+### ALIAS ###
 alias c clear
-alias ls "eza --icons=always --group-directories-first -F"
-alias la "ls -lah"
-alias ll "ls -lh"
-alias edit msedit
 
+# files
+alias ls_ "eza --icons=auto --group-directories-first -F"
+alias ls "ls_ -a"
+alias la "ls_ -lah"
+alias lav "la --total-size"
+alias ll "ls -lh"
+alias tree "ls_ --tree"
+
+# shell
+alias reload_shell "source ~/.config/fish/config.fish"
+
+# programs
+alias edit msedit
+alias df duf
+alias yayf "yay -Slq | fzf --multi --preview 'yay -Sii {1}' --preview-window=down:75% | xargs -ro yay -S"
+
+### PATH ###
 fish_add_path ~/flutter_sdk/flutter/bin
 fish_add_path ~/.local/bin
 fish_add_path ~/.cargo/bin
 
+### FUNCTIONS ###
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
@@ -28,10 +44,7 @@ end
 starship init fish | source # init starship
 enable_transience
 # STARSHIP END
-#
 
 zoxide init --cmd cd fish | source # init zoxide (autojump)
-
-thefuck --alias | source
 
 fish_add_path /home/kiwi/.spicetify
