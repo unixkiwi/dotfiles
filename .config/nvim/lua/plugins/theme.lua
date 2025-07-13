@@ -8,13 +8,14 @@ return {
       italic_comments = true,
       underline_links = true,
       terminal_colors = true,
+      transparent = true,
 
-      color_overrides = {
-        vscBack = "#131313",
-      },
-      group_overrides = {
-        Normal = { bg = "#131313" },
-      },
+      -- color_overrides = {
+      --   vscLineNumber = "#FFFFFF",
+      -- },
+      -- group_overrides = {
+      --   Normal = { bg = "#131313" },
+      -- },
     })
 
     vim.cmd.colorscheme("vscode")

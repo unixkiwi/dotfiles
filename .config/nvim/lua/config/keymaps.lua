@@ -14,3 +14,10 @@ end, {})
 -- tabs
 vim.keymap.set("n", "<C-w>", ":bd<CR>", {})
 vim.keymap.set("n", "<C-Tab>", ":bn<CR>", {})
+
+-- flutter
+vim.keymap.set("n", "<leader>hf", ":FlutterDebug<CR>", { noremap = true, desc = "Run Flutter Project (Debug)" })
+vim.keymap.set("n", "<leader>hr", ":FlutterRun<CR>", { noremap = true, desc = "Run Flutter Project in (Release)" })
+vim.keymap.set("n", "<leader>hh", ":FlutterReload<CR>", { noremap = true, desc = "Reload Flutter Project" })
+vim.keymap.set("n", "<leader>hH", ":FlutterRestart<CR>", { noremap = true, desc = "Restart Flutter Project" })
+vim.keymap.set("n", "<leader>hl", ":FlutterLogToggle<CR>", { noremap = true, desc = "Toggle Flutter Log buffer" })
