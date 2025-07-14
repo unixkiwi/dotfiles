@@ -62,15 +62,17 @@ button {
 
 #battery.critical:not(.charging) {
   background-color: @error;
-  color: #ffffff;
+  color: @on_error;
 }
 
 #network.disconnected {
   background-color: @error;
+  color: @on_error;
 }
 
 #temperature.critical {
   background-color: @error;
+  color: @on_error;
 }
 
 #tray > .passive {
