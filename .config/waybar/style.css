@@ -1,13 +1,13 @@
 @import "colors.css";
 
 * {
-  /* `otf-font-awesome` is required to be installed for icons */
-  font-family: "CaskaydiaCove Nerd Font", sans-serif;
-  font-size: 13px;
+  font-family: "CaskaydiaCove Nerd Font", "Font Awesome 6 Free", sans-serif;
+  font-size: 1.025em;
+  font-weight: bold;
 }
 
 window#waybar {
-  background-color: @surface_container;
+  background-color: @background;
   color: #ffffff;
 }
 
@@ -16,70 +16,48 @@ window#waybar.hidden {
 }
 
 button {
-  /* Use box-shadow instead of border so the text isn't offset */
-  box-shadow: inset 0 -3px transparent;
-  /* Avoid rounded borders under each button name */
-  border: none;
-  border-radius: 0;
+  padding: 0.3em 0.6em;
 }
 
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
-button:hover {
-  background: inherit;
-  box-shadow: inset 0 -3px #ffffff;
+#window {
+  color: @on_background;
+}
+
+#workspaces button:hover {
+  background-color: @surface_container_highest;
+  color: @on_surface_container;
 }
 
 #workspaces button {
-  padding: 0 5px;
-  background-color: transparent;
-  color: #aaa;
+  background-color: @surface_container;
+  color: @on_surface_container;
+  font-weight: bolder;
+  margin: 0.3rem 0.2rem;
+  border-radius: 7px;
 }
 
 #workspaces button.active {
-  background-color: @tertiary_container;
-  color: #fff;
+  background-color: @secondary_container;
+  color: @on_secondary_container;
 }
 
 #workspaces button.urgent {
-  background-color: #eb4d4b;
+  background-color: @error;
+  color: @on_error;
 }
 
+#custom-media,
 #clock,
 #battery,
 #temperature,
 #network,
 #tray,
-#wireplumber {
-  padding: 0 15px;
-  color: #ffffff;
-}
-
-#window,
-#workspaces {
-  margin: 0 4px;
-}
-
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
-  margin-left: 0;
-}
-
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
-  margin-right: 0;
-}
-
+#wireplumber,
 #custom-power {
-  background-color: @surface_variant;
-}
-
-#clock {
-  background-color: @surface_variant;
-}
-
-#battery {
-  background-color: @surface_variant;
-  color: #fff;
+  padding: 0.2em 1em;
+  margin: 0.3em 0.2em;
+  border-radius: 7px;
+  background-color: @surface_container;
 }
 
 #battery.critical:not(.charging) {
@@ -87,28 +65,12 @@ button:hover {
   color: #ffffff;
 }
 
-label:focus {
-  background-color: @surface_variant;
-}
-
-#network {
-  background-color: @surface_variant;
-}
-
 #network.disconnected {
   background-color: @error;
 }
 
-#temperature {
-  background-color: @surface_variant;
-}
-
 #temperature.critical {
   background-color: @error;
-}
-
-#tray {
-  background-color: @surface_variant;
 }
 
 #tray > .passive {
@@ -117,10 +79,6 @@ label:focus {
 
 #tray > .needs-attention {
   -gtk-icon-effect: highlight;
-  background-color: #eb4d4b;
-}
-
-#wireplumber {
-  color: #fff;
-  background-color: @surface_variant;
+  background-color: @error;
+  color: @on_error;
 }
