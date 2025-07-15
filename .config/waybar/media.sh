@@ -3,8 +3,12 @@ while :; do
 	title=$(playerctl metadata title 2>/dev/null)
 	status=$(playerctl status 2>/dev/null)
 
-	if [ "$status" = "Paused" ]; then
-		output=" $title"
+	if [ "$status" = "Paused" ] || [ "$status" = "" ]; then
+		if [ "$title" = "" ]; then
+			output="  (ᴗ_ᴗ)"
+		else
+			output=" $title"
+		fi
 	else
 		output=" $title"
 	fi
