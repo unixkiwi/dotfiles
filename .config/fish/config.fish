@@ -2,7 +2,7 @@
 set fish_greeting
 set CUDA_VISIBLE_DEVICES 0,1
 set EDITOR nvim
-
+set JAVA_TOOL_OPTIONS --enable-native-access=ALL-UNNAMED
 ### ALIAS ###
 alias c clear
 
