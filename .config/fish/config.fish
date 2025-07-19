@@ -3,6 +3,7 @@ set fish_greeting
 set CUDA_VISIBLE_DEVICES 0,1
 set EDITOR nvim
 set JAVA_TOOL_OPTIONS --enable-native-access=ALL-UNNAMED
+
 ### ALIAS ###
 alias c clear
 
@@ -21,6 +22,7 @@ alias reload_shell "source ~/.config/fish/config.fish"
 alias edit msedit
 alias df duf
 alias yayf "yay -Slq | fzf --multi --preview 'yay -Sii {1}' --preview-window=down:75% | xargs -ro yay -S"
+alias yay "yay --noconfirm --answerdiff none --answerclean All"
 
 ### PATH ###
 fish_add_path ~/flutter_sdk/flutter/bin
