@@ -39,7 +39,7 @@
 		"format-alt": "{:%Y-%m-%d}"
 	},
 	"temperature": {
-		"critical-threshold": 80,
+		"critical-threshold": 90,
 		"format": "{temperatureC}°C {icon}",
 		"format-icons": ["", "", ""]
 	},
