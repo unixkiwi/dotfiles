@@ -5,6 +5,11 @@ vim.keymap.set("n", "<leader>f", ":Telescope live_grep<CR>", { desc = "Grep file
 -- show Neotree
 vim.keymap.set("n", "<C-b>", ":Neotree filesystem reveal left<CR>", {})
 
+-- bufferline
+vim.keymap.set("n", "<S-l>", ":BufferLineCycleNext<CR>", { noremap = true })
+vim.keymap.set("n", "<S-h>", ":BufferLineCyclePrev<CR>", { noremap = true })
+vim.keymap.set("n", "<leader>bd", ":bdelete!<CR>", { noremap = true, desc = "Close current buffer (tab)" })
+
 -- flutter
 vim.keymap.set("n", "<leader>hf", ":FlutterDebug<CR>", { noremap = true, desc = "Run Flutter Project (Debug)" })
 vim.keymap.set("n", "<leader>hr", ":FlutterRun<CR>", { noremap = true, desc = "Run Flutter Project in (Release)" })
