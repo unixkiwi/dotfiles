@@ -34,9 +34,9 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-function fish_user_key_bindings
-    bind -M insert \t accept-autosuggestion
-end
+# function fish_user_key_bindings
+#     bind -M insert \t accept-autosuggestion
+# end
 
 # STARSHIP
 function starship_transient_prompt_func
