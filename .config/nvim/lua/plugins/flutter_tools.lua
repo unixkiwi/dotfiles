@@ -1,3 +1,7 @@
+if true then
+	return {}
+end
+
 return {
 	"nvim-flutter/flutter-tools.nvim",
 	lazy = false,
@@ -5,7 +9,5 @@ return {
 		"nvim-lua/plenary.nvim",
 		"stevearc/dressing.nvim",
 	},
-	config = function()
-		require("flutter-tools").setup()
-	end,
+	config = true,
 }

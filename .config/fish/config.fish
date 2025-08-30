@@ -50,3 +50,4 @@ enable_transience
 zoxide init --cmd cd fish | source # init zoxide (autojump)
 
 fish_add_path /home/kiwi/.spicetify
+fish_add_path /home/kiwi/.dotnet/tools

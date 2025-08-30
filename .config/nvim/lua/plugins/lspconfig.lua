@@ -49,7 +49,7 @@ return {
 		local capabilities = cmp_nvim_lsp.default_capabilities()
 
 		vim.diagnostic.config({
-			update_in_insert = true,
+			update_in_insert = false,
 			signs = {
 				text = {
 					[vim.diagnostic.severity.ERROR] = " ",
@@ -64,6 +64,24 @@ return {
 			},
 			underline = true,
 			severity_sort = true,
+		})
+
+		require("lspconfig").dartls.setup({
+			cmd = { "dart", "language-server", "--protocol=lsp" },
+			filetypes = { "dart" },
+			init_options = {
+				closingLabels = true,
+				flutterOutline = true,
+				onlyAnalyzeProjectsWithOpenFiles = true,
+				outline = true,
+				suggestFromUnimportedLibraries = true,
+			},
+			settings = {
+				dart = {
+					completeFunctionCalls = true,
+					showTodos = true,
+				},
+			},
 		})
 
 		vim.lsp.config("*", {

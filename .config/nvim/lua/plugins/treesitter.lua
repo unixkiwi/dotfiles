@@ -9,7 +9,7 @@ return {
 		ensure_installed = {
 			"bash",
 			"c",
-			"dart",
+			-- "dart",
 			"diff",
 			"html",
 			"java",
