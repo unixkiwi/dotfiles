@@ -1,7 +1,3 @@
-if true then
-	return {}
-end
-
 return {
 	"nvim-flutter/flutter-tools.nvim",
 	lazy = false,
