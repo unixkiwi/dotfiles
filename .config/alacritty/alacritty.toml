@@ -5,7 +5,6 @@ import = ["colors.toml"]
 #]
 
 
-
 [font.bold]
 family = "CaskaydiaCove Nerd Font Mono"
 style = "bold"
@@ -15,7 +14,7 @@ x = 0
 y = 0
 
 [font.italic]
-family = "CaskaydiaCove Nerd Font Mono"
+family = "VictorMono Nerd Font Mono"
 
 [font.normal]
 family = "CaskaydiaCove Nerd Font Mono"
