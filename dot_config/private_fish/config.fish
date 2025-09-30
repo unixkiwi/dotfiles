@@ -31,6 +31,7 @@ fish_add_path ~/.cargo/bin
 
 ### FUNCTIONS ###
 if status is-interactive
+  atuin init fish | source
     # Commands to run in interactive sessions can go here
 end
 
