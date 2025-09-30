@@ -1,9 +1,0 @@
-show=drun
-allow_markup=true
-allow_images=true
-image_size=32
-sort_order=alphabetical
-matching=multi-contains
-insensitive=true
-no_actions=true
-parse_search=true
