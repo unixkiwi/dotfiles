@@ -36,7 +36,7 @@ if status is-interactive
 end
 
 function fish_user_key_bindings
-  bind \cj history-search-backward
+  bind -M insert ctrl-j _atuin_bind_up
 end
 
 # STARSHIP
