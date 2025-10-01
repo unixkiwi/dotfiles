@@ -19,6 +19,7 @@ alias tree "ls_ --tree"
 alias reload_shell "source ~/.config/fish/config.fish"
 
 # programs
+alias hx helix
 alias edit msedit
 alias df duf
 alias yayf "yay -Slq | fzf --multi --preview 'yay -Sii {1}' --preview-window=down:75% | xargs -ro yay -S"
