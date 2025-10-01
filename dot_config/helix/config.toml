@@ -1,0 +1,56 @@
+theme = "dark_plus"
+
+[editor]
+line-number = "relative"
+cursorline = true
+continue-comments = true
+
+auto-completion = true
+path-completion = true
+auto-format = true
+auto-pairs = true
+
+bufferline = "multiple"
+
+popup-border = "all"
+
+clipboard-provider = "wayland"
+
+[editor.statusline]
+left = ["mode", "spinner", "read-only-indicator", "version-control"]
+center = ["file-name", "file-modification-indicator"]
+right = ["diagnostics", "register", "position", "file-encoding"]
+
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "VISUAL"
+
+diagnostics = ["warning", "error"]
+
+[editor.lsp]
+enable = true
+display-progress-messages = true
+display-inlay-hints = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.auto-save]
+focus-lost = true
+
+[editor.whitespace.render]
+tab = "all"
+
+[editor.indent-guides]
+render = true
+character = "⸽"
+skip-levels = 1
+
+[editor.inline-diagnostics]
+cursor-line = "error"
+
+[editor.file-picker]
+hidden = false
+
