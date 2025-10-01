@@ -31,13 +31,12 @@ fish_add_path ~/.cargo/bin
 
 ### FUNCTIONS ###
 if status is-interactive
-  atuin init fish | source
     # Commands to run in interactive sessions can go here
 end
 
-function fish_user_key_bindings
-  bind -M insert ctrl-j _atuin_bind_up
-end
+# function fish_user_key_bindings
+#   # keybinds
+# end
 
 # STARSHIP
 function starship_transient_prompt_func
