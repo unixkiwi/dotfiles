@@ -25,3 +25,7 @@ Desktop:
 
 Browser + App Picker
 ![Browser + App Picker](./screenshots/browser_app_picker.png)
+
+## Setup
+
+You can setup these dotfiles using chezmoi.
