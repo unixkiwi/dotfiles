@@ -55,3 +55,8 @@ pyenv init - fish | source
 
 fish_add_path /home/kiwi/.spicetify
 fish_add_path /home/kiwi/.dotnet/tools
+
+# TMUX
+if not tmux has-session 2>/dev/null
+    tmux
+end
