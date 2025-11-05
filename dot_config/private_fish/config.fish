@@ -55,6 +55,7 @@ pyenv init - fish | source
 
 fish_add_path /home/kiwi/.spicetify
 fish_add_path /home/kiwi/.dotnet/tools
+fish_add_path /home/kiwi/.pub-cache/bin
 
 # TMUX
 if type -q tmux
