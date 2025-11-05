@@ -57,6 +57,8 @@ fish_add_path /home/kiwi/.spicetify
 fish_add_path /home/kiwi/.dotnet/tools
 
 # TMUX
-if not tmux has-session 2>/dev/null
-    tmux
+if type -q tmux
+    if not set -q TMUX
+        tmux new-session
+    end
 end
