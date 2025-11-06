@@ -25,3 +25,26 @@ vim.keymap.set("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 vim.keymap.set("n", "<leader>sx", ":close<CR>", { noremap = true, silent = true, desc = "Close split" })
 vim.keymap.set("n", "<leader>sh", ":split<CR>", { noremap = true, silent = true, desc = "Split horizontally" })
 vim.keymap.set("n", "<leader>sv", ":vsplit<CR>", { noremap = true, silent = true, desc = "Split vertically" })
+
+-- terminal
+vim.keymap.set(
+	"n",
+	"<leader>tt",
+	":terminal<CR>",
+	{ noremap = true, silent = true, desc = "Open terminal in current window" }
+)
+vim.keymap.set(
+	"n",
+	"<leader>ts",
+	":vsplit | terminal<CR>",
+	{ noremap = true, silent = true, desc = "Open terminal in vertical split" }
+)
+vim.keymap.set(
+	"n",
+	"<leader>th",
+	":split | terminal<CR>",
+	{ noremap = true, silent = true, desc = "Open terminal in horizontal split" }
+)
+
+-- escape terminal
+vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { noremap = true, desc = "Terminal mode: exit to normal mode" })
